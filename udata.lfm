@@ -1,0 +1,73 @@
+object Form1: TForm1
+  Left = 286
+  Height = 383
+  Top = 130
+  Width = 683
+  ClientHeight = 383
+  ClientWidth = 683
+  LCLVersion = '1.6.4.0'
+  object grid: TsWorksheetGrid
+    Left = 0
+    Height = 333
+    Top = 0
+    Width = 683
+    FrozenCols = 0
+    FrozenRows = 0
+    ReadFormulas = False
+    WorkbookSource = sWorkbookSource1
+    Align = alClient
+    AutoAdvance = aaDown
+    ColCount = 26
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    ParentFont = False
+    RowCount = 100
+    TabOrder = 0
+    TitleFont.Color = clBlack
+    TitleFont.Height = -13
+    TitleFont.Name = 'Arial'
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 333
+    Width = 683
+    Align = alBottom
+    ClientHeight = 50
+    ClientWidth = 683
+    TabOrder = 1
+    object Button1: TButton
+      Left = 32
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Buka'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 128
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Input'
+      OnClick = Button2Click
+      TabOrder = 1
+    end
+  end
+  object sWorkbookSource1: TsWorkbookSource
+    AutoDetectFormat = True
+    FileFormat = sfExcel8
+    FileName = 'excel.xls'
+    Options = []
+    left = 47
+    top = 40
+  end
+  object Q: TZQuery
+    Connection = FMain.Con
+    Params = <>
+    left = 156
+    top = 256
+  end
+end

@@ -1,0 +1,235 @@
+object FMain: TFMain
+  Left = 301
+  Height = 481
+  Top = 146
+  Width = 791
+  Caption = 'FreeBarcodeLabel'
+  ClientHeight = 481
+  ClientWidth = 791
+  OnShow = FormShow
+  LCLVersion = '1.6.4.0'
+  WindowState = wsMaximized
+  object SpkToolbar1: TSpkToolbar
+    Left = 0
+    Height = 112
+    Top = 0
+    Width = 791
+    Appearance.Tab.TabHeaderFont.Color = 9126421
+    Appearance.Tab.BorderColor = 14922381
+    Appearance.Tab.GradientFromColor = 16115934
+    Appearance.Tab.GradientToColor = 15587527
+    Appearance.Tab.GradientType = bkConcave
+    Appearance.Tab.InactiveTabHeaderFontColor = 9126421
+    Appearance.Pane.BorderDarkColor = 14335646
+    Appearance.Pane.BorderLightColor = 16315117
+    Appearance.Pane.CaptionBgColor = 15849922
+    Appearance.Pane.CaptionFont.Color = 9126421
+    Appearance.Pane.GradientFromColor = 16115934
+    Appearance.Pane.GradientToColor = 15587527
+    Appearance.Pane.GradientType = bkConcave
+    Appearance.Element.IdleFrameColor = 14727067
+    Appearance.Element.IdleGradientFromColor = 15653832
+    Appearance.Element.IdleGradientToColor = 15323324
+    Appearance.Element.IdleGradientType = bkConcave
+    Appearance.Element.IdleInnerLightColor = 15852501
+    Appearance.Element.IdleInnerDarkColor = 15520702
+    Appearance.Element.IdleCaptionColor = 11631958
+    Appearance.Element.HotTrackFrameColor = 10211293
+    Appearance.Element.HotTrackGradientFromColor = 14351615
+    Appearance.Element.HotTrackGradientToColor = 5101567
+    Appearance.Element.HotTrackGradientType = bkConcave
+    Appearance.Element.HotTrackInnerLightColor = 12972543
+    Appearance.Element.HotTrackInnerDarkColor = 8045272
+    Appearance.Element.HotTrackCaptionColor = 8864367
+    Appearance.Element.HotTrackBrightnessChange = 40
+    Appearance.Element.ActiveFrameColor = 5535371
+    Appearance.Element.ActiveGradientFromColor = 7126014
+    Appearance.Element.ActiveGradientToColor = 4035324
+    Appearance.Element.ActiveGradientType = bkConcave
+    Appearance.Element.ActiveInnerLightColor = 961020
+    Appearance.Element.ActiveInnerDarkColor = 961020
+    Appearance.Element.ActiveCaptionColor = 8405614
+    Appearance.Element.Style = esRounded
+    TabIndex = 0
+    Tabs = (
+      'SpkTab1'
+    )
+    object SpkTab1: TSpkTab
+      CustomAppearance.Tab.TabHeaderFont.Color = 9126421
+      CustomAppearance.Tab.BorderColor = 14922381
+      CustomAppearance.Tab.GradientFromColor = 16115934
+      CustomAppearance.Tab.GradientToColor = 15587527
+      CustomAppearance.Tab.GradientType = bkConcave
+      CustomAppearance.Tab.InactiveTabHeaderFontColor = 9126421
+      CustomAppearance.Pane.BorderDarkColor = 14335646
+      CustomAppearance.Pane.BorderLightColor = 16315117
+      CustomAppearance.Pane.CaptionBgColor = 15849922
+      CustomAppearance.Pane.CaptionFont.Color = 9126421
+      CustomAppearance.Pane.GradientFromColor = 16115934
+      CustomAppearance.Pane.GradientToColor = 15587527
+      CustomAppearance.Pane.GradientType = bkConcave
+      CustomAppearance.Element.IdleFrameColor = 14727067
+      CustomAppearance.Element.IdleGradientFromColor = 15653832
+      CustomAppearance.Element.IdleGradientToColor = 15323324
+      CustomAppearance.Element.IdleGradientType = bkConcave
+      CustomAppearance.Element.IdleInnerLightColor = 15852501
+      CustomAppearance.Element.IdleInnerDarkColor = 15520702
+      CustomAppearance.Element.IdleCaptionColor = 11631958
+      CustomAppearance.Element.HotTrackFrameColor = 10211293
+      CustomAppearance.Element.HotTrackGradientFromColor = 14351615
+      CustomAppearance.Element.HotTrackGradientToColor = 5101567
+      CustomAppearance.Element.HotTrackGradientType = bkConcave
+      CustomAppearance.Element.HotTrackInnerLightColor = 12972543
+      CustomAppearance.Element.HotTrackInnerDarkColor = 8045272
+      CustomAppearance.Element.HotTrackCaptionColor = 8864367
+      CustomAppearance.Element.HotTrackBrightnessChange = 40
+      CustomAppearance.Element.ActiveFrameColor = 5535371
+      CustomAppearance.Element.ActiveGradientFromColor = 7126014
+      CustomAppearance.Element.ActiveGradientToColor = 4035324
+      CustomAppearance.Element.ActiveGradientType = bkConcave
+      CustomAppearance.Element.ActiveInnerLightColor = 961020
+      CustomAppearance.Element.ActiveInnerDarkColor = 961020
+      CustomAppearance.Element.ActiveCaptionColor = 8405614
+      CustomAppearance.Element.Style = esRounded
+      Caption = 'File'
+      Panes = (
+        'SpkPane1'
+      )
+      object SpkPane1: TSpkPane
+        Caption = 'Pane'
+        Items = (
+          'SpkLargeButton1'
+          'SpkLargeButton2'
+          'SpkLargeButton3'
+          'SpkLargeButton4'
+        )
+        object SpkLargeButton1: TSpkLargeButton
+          Caption = 'Data'
+        end
+        object SpkLargeButton2: TSpkLargeButton
+          Caption = 'Desain'
+          OnClick = SpkLargeButton2Click
+        end
+        object SpkLargeButton3: TSpkLargeButton
+          Caption = 'Cetak'
+          OnClick = SpkLargeButton3Click
+        end
+        object SpkLargeButton4: TSpkLargeButton
+          Caption = 'Import'
+        end
+      end
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 369
+    Top = 112
+    Width = 791
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Data'
+      ClientHeight = 341
+      ClientWidth = 783
+      object grid: TStringGrid
+        Left = 0
+        Height = 241
+        Top = 50
+        Width = 783
+        Align = alClient
+        AutoFillColumns = True
+        TabOrder = 0
+        ColWidths = (
+          64
+          178
+          178
+          178
+          181
+        )
+      end
+      object Panel1: TPanel
+        Left = 0
+        Height = 50
+        Top = 291
+        Width = 783
+        Align = alBottom
+        ClientHeight = 50
+        ClientWidth = 783
+        TabOrder = 1
+        object BitBtn1: TBitBtn
+          Left = 16
+          Height = 30
+          Top = 8
+          Width = 75
+          Caption = 'Tambah'
+          OnClick = BitBtn1Click
+          TabOrder = 0
+        end
+        object BitBtn2: TBitBtn
+          Left = 96
+          Height = 30
+          Top = 8
+          Width = 75
+          Caption = 'Hapus'
+          TabOrder = 1
+        end
+      end
+      object Panel2: TPanel
+        Left = 0
+        Height = 50
+        Top = 0
+        Width = 783
+        Align = alTop
+        TabOrder = 2
+      end
+    end
+  end
+  object Con: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    Port = 0
+    Database = 'data.db'
+    Protocol = 'sqlite'
+    left = 64
+    top = 144
+  end
+  object Q: TZQuery
+    Connection = Con
+    SQL.Strings = (
+      'select*from barcode'
+    )
+    Params = <>
+    left = 104
+    top = 144
+  end
+  object frBarCodeObject1: TfrBarCodeObject
+    left = 176
+    top = 240
+  end
+  object R: TfrReport
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    left = 112
+    top = 224
+  end
+  object frTNPDFExport1: TfrTNPDFExport
+    left = 335
+    top = 171
+  end
+  object frDesigner1: TfrDesigner
+    left = 232
+    top = 232
+  end
+  object frDBDataSet1: TfrDBDataSet
+    DataSet = Q
+    left = 151
+    top = 144
+  end
+end
